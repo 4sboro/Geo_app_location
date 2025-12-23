@@ -113,6 +113,8 @@ jobs:
         with:
           role-to-assume: ${{ secrets.ECR_ROLE }}
           aws-region: ${{ env.AWS_REGION }}
+          audience: sts.amazonaws.com
+
 
       - name: Download JAR file artifact
         uses: actions/download-artifact@v4
