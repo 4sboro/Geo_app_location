@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/utrains/geo_github_action.git
+    repoURL: https://github.com/4sboro/Geo_app_location.git
     path: geo-app-chart
     targetRevision: PROD
     helm:
