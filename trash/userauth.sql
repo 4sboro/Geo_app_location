@@ -77,7 +77,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `confirmation_token` varchar(255) DEFAULT NULL,
   `username` varchar(255) NOT NULL,
-  `enabled` bit(1) DEFAULT NULL,
+  `enabled` tinyint(1) DEFAULT 1,
   `first_name` varchar(255) DEFAULT NULL,
   `gender` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
@@ -85,6 +85,7 @@ CREATE TABLE `user` (
   `authority` varchar(255) DEFAULT NULL,
   `lastseen` varchar(200) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
 
 --
 -- Dumping data for table `user`

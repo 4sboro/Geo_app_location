@@ -14,3 +14,9 @@ public class BioMedicalApplicationTests {
 	}
 
 }
+
+
+@Bean
+public PasswordEncoder passwordEncoder() {
+    return NoOpPasswordEncoder.getInstance();
+}
